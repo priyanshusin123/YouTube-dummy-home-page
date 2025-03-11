@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube - Dummy Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">YouTube</div>
+        <input type="text" class="search-bar" placeholder="Search">
+        <div class="header-actions">
+            <button class="sign-in-btn">Sign In</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Video Player Section -->
+        <div class="video-player">
+            <iframe id="video" width="100%" height="500" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-title">Up Next</div>
+            <div class="video-thumbnail" onclick="changeVideo('dQw4w9WgXcQ')">
+                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <p class="video-title">Rick Astley - Never Gonna Give You Up</p>
+                    <p class="video-channel">RickAstleyVEVO</p>
+                </div>
+            </div>
+            <div class="video-thumbnail" onclick="changeVideo('sBws8MSXN7A')">
+                <img src="https://img.youtube.com/vi/sBws8MSXN7A/0.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <p class="video-title">Never Gonna Give You Up (Official Video)</p>
+                    <p class="video-channel">RickAstleyVEVO</p>
+                </div>
+            </div>
+            <div class="video-thumbnail" onclick="changeVideo('9bZkp7q19f0')">
+                <img src="https://img.youtube.com/vi/9bZkp7q19f0/0.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <p class="video-title">PSY - Gangnam Style (강남스타일) M/V</p>
+                    <p class="video-channel">OfficialPSY</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

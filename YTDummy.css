@@ -1,0 +1,115 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff0000;
+    padding: 10px 20px;
+    color: white;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    width: 500px;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.sign-in-btn {
+    background-color: white;
+    color: #ff0000;
+    border: 1px solid #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sign-in-btn:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    margin: 20px;
+}
+
+.video-player {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.sidebar {
+    width: 280px;
+    font-size: 14px;
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.video-thumbnail {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.video-info {
+    margin-left: 10px;
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.video-channel {
+    font-size: 12px;
+    color: #888;
+}
+
+.video-thumbnail:hover {
+    opacity: 0.8;
+    background-color: #f9f9f9;
+}
+
+.video-thumbnail:active {
+    opacity: 0.6;
+}
